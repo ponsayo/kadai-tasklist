@@ -36,6 +36,7 @@ class TasksController < ApplicationController
     else
       flash.now[:danger] = 'Task は更新されませんでした'
       render :edit
+    end
   end
 
   def destroy
@@ -55,4 +56,3 @@ class TasksController < ApplicationController
 
 
 end
-
